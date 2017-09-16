@@ -1,0 +1,33 @@
+h1{
+  font-size: 24px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+
+h2{
+  font-size: 24px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+li h2{
+  list-style: none;
+  font-size: 14px;;
+}
+
+li a {
+  text-decoration: none;
+  color:#a30034;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  letter-spacing: .4pt;
+}
+
+.medium-series{
+  display: block;
+  background-color:red ;
+}
+
+.medium-movies{
+  display: block;
+  background:blue;
+}

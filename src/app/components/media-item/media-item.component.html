@@ -1,0 +1,47 @@
+
+
+
+
+
+<p><b>Simple interpolation</b>: <span>{{ name }}</span></p>
+<p><b>With Brackets property binding</b>: <span [textContent]="name"></span> </p>
+<p><b>No Brackets</b>: <span textContent="{{name}}"></span></p>
+<!-- Above does the same  -->
+
+<p><b>Using the data from a function</b>  {{ wasWatched() }}</p>
+
+
+
+<!-- Binding a function from the component to the dom HTML  -->
+<a class="delete" (click)="onDelete()">Delete</a>
+<a class="details" (click)="onWatch()">Watch Details</a>
+
+
+<!-- Interpolation for the data send from the app.component.ts  -->
+<p>Title: {{mediaItem.name | slice: 0: 10 | uppercase }}</p>
+<p>Type: {{mediaItem.medium}}</p>
+<p>Cat: {{mediaItem.category}}</p>
+<p>Year: {{mediaItem.year}}</p>
+
+<!--
+  Using pipes to execute a function and get a returned value from tha function,
+  can have multiple pipes and parameters.
+
+  {{ mediaItem.watchedOn | date: 'shortDate' }}
+  {{ mediaItem.watchedOn | date: | pipeTwo | pipeThree }}
+
+ -->
+<p *ngIf="mediaItem.watchedOn">Watche on: {{ mediaItem.watchedOn | date: 'shortDate' }}</p>
+<p [mwFavorite]="mediaItem.isFavorite" >Is favorite * </p>
+<!--
+Can be used like this, also can be use in any kind of tag element
+  *ngIf = Sintactic sugar
+
+  The template element is not render, just the content
+  <template [ngIF]="mediaItem.watchedOn">
+    <div> Content </div>
+  </template>
+
+  *ngFor
+-->
+<p>{{mediaItem.isFavorite}}</p>
