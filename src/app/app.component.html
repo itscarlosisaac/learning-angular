@@ -1,29 +1,41 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="app-container">
-  <!-- Left is Binding Target // Binding source on the right -->
-  <header>
-    <div>
-      {{ mediaItems | categoryList }}
-    </div>
-  </header>
 
-  <h1>Multi Elements</h1>
-  <div *ngFor="let mediaItem of mediaItems">
-    <!-- ng Class = Attribute directives  -->
-     <mw-media-item
 
-     [ngClass]="{'medium-movies': mediaItem.medium === 'Movies',
-                 'medium-series': mediaItem.medium === 'Series'}"
-     [mediaItem]='mediaItem'
-     (delete)="onMediaItemDelete($event)">
-     </mw-media-item>
-     <hr>
+  <div class="event-list">
+      <event-component *ngFor="let eventItem of eventsData"
+        [eventItem]="eventItem"
+        class="event">
+      </event-component>
   </div>
 
-  <h1>Simple Element</h1>
-  <mw-media-item
-  [mediaItem]='firstMediaItem'
-  (delete)="onMediaItemDelete($event)">
-  </mw-media-item>
+
+  <div class="hidden">
+    <!-- Left is Binding Target // Binding source on the right -->
+    <header>
+      <div>
+        {{ mediaItems | categoryList }}
+      </div>
+    </header>
+
+    <h1>Multi Elements</h1>
+    <div *ngFor="let mediaItem of mediaItems">
+      <!-- ng Class = Attribute directives  -->
+       <mw-media-item
+
+       [ngClass]="{'medium-movies': mediaItem.medium === 'Movies',
+                   'medium-series': mediaItem.medium === 'Series'}"
+       [mediaItem]='mediaItem'
+       (delete)="onMediaItemDelete($event)">
+       </mw-media-item>
+       <hr>
+    </div>
+
+    <h1>Simple Element</h1>
+    <mw-media-item
+    [mediaItem]='firstMediaItem'
+    (delete)="onMediaItemDelete($event)">
+    </mw-media-item>
+  </div>
 
 </div>

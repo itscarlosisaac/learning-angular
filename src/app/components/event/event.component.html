@@ -1,0 +1,11 @@
+<div class="event-component">
+  <div>
+    <img width="200" src={{eventItem.thumbnailUrl}} alt="Event Alt Thumb" class="event-thumb">
+    <span>{{eventItem.eventDate | date: 'mediumDate'}}</span>
+  </div>
+
+  <h3>{{eventItem.eventName}}</h3>
+  <small>{{eventItem.eventSpeaker}}  | {{eventItem.eventLocation}} </small>
+  <p>{{eventItem.eventDescription}}</p>
+  <a>Details</a>
+</div>

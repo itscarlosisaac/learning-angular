@@ -5,6 +5,9 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MediaItemComponent } from './components/media-item/media-item.component'
 
+// Loading event component
+import { EventComponent } from './components/event/event.component';
+
 // Adding directives
 import { FavoriteDirective } from './directives/favorite.directive'
 
@@ -14,6 +17,7 @@ import { CategotyListPipe } from './pipes/category.list.pipe'
 @NgModule({
   declarations: [
     AppComponent,
+    EventComponent,
     MediaItemComponent,
     FavoriteDirective,
     CategotyListPipe

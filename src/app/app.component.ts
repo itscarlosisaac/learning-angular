@@ -47,6 +47,39 @@ export class AppComponent {
     }
   ]
 
+  eventsData = [
+    {
+      id: 1,
+      eventName: 'Angular 4, Basic Binding',
+      eventSpeaker: "Michael Dugglas",
+      eventLocation: "Seattle",
+      eventDate: 1394166562384,
+      thumbnailUrl: "https://cdn.dribbble.com/users/4094/screenshots/1672386/027.jpg",
+      eventDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+      eventDetails: "Details"
+    },
+    {
+      id: 2,
+      eventName: 'Working With React',
+      eventSpeaker: "Max Firtman",
+      eventLocation: "New York, NY",
+      eventDate: 1294166565384,
+      thumbnailUrl: "https://cdn.dribbble.com/users/4094/screenshots/1672386/027.jpg",
+      eventDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+      eventDetails: "Details"
+    },
+    {
+      id: 3,
+      eventName: 'How To Use TypeScript',
+      eventSpeaker: "Ronald Dolz",
+      eventLocation: "San Francisco",
+      eventDate: 1294166565384,
+      thumbnailUrl: "https://cdn.dribbble.com/users/4094/screenshots/1672386/027.jpg",
+      eventDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+      eventDetails: "Details"
+    }
+  ]
+
 
   onMediaItemDelete(mediaItem){
     console.log(mediaItem)

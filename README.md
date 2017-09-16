@@ -1,3 +1,9 @@
+#Learning Angular,
+
+This is just a simple of my Angular 2 practices with modules.
+
+---------
+
 # AngularBasics
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
