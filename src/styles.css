@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  font-family: SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif ;
+  -webkit-font-smoothing: antialliased;
+}
 
 .hidden{ display: none; }
 
@@ -7,9 +11,20 @@
   flex-direction: row;
   flex-wrap: wrap;
   font-family: SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif ;
-  width: 100%;
+  width: 100vw;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.advocates-list{
+  display: flex;
+  height: 300px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  min-width: 100vw;
+  max-width: 1200px;
+  margin:0 auto;
 }
 
 .event-list .event{

@@ -80,6 +80,30 @@ export class AppComponent {
     }
   ]
 
+  advocatesData = [
+    {
+      id: 1,
+      thumbnailUrl: "url(https://cdn.dribbble.com/users/182545/screenshots/781569/dribbble.png)",
+      name: 'Michael Dugglas',
+      title: "Web Developer",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      id: 2,
+      thumbnailUrl: "url(https://cdn.dribbble.com/users/182545/screenshots/781569/dribbble.png)",
+      name: "Max Firtman",
+      title: "Android Developer",
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+    },
+    {
+      id: 3,
+      thumbnailUrl: "url(https://cdn.dribbble.com/users/182545/screenshots/781569/dribbble.png)",
+      name: "Ronald Dolz",
+      title: "Graphic Designer",
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+    }
+  ]
+
 
   onMediaItemDelete(mediaItem){
     console.log(mediaItem)

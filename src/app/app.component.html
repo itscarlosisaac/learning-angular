@@ -1,12 +1,20 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="app-container">
 
+  <div class="advocates-list">
+    <advocates-component *ngFor="let advocate of advocatesData"
+      [advocateItem]="advocate">
+    </advocates-component>
+  </div>
 
-  <div class="event-list">
-      <event-component *ngFor="let eventItem of eventsData"
-        [eventItem]="eventItem"
-        class="event">
-      </event-component>
+
+  <div class="hidden">
+    <div class="event-list">
+        <event-component *ngFor="let eventItem of eventsData"
+          [eventItem]="eventItem"
+          class="event">
+        </event-component>
+    </div>
   </div>
 
 

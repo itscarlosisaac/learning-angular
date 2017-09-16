@@ -8,6 +8,9 @@ import { MediaItemComponent } from './components/media-item/media-item.component
 // Loading event component
 import { EventComponent } from './components/event/event.component';
 
+// Loading advocate component
+import { AdvocatesComponent } from './components/advocates/advocates.component'
+
 // Adding directives
 import { FavoriteDirective } from './directives/favorite.directive'
 
@@ -17,6 +20,7 @@ import { CategotyListPipe } from './pipes/category.list.pipe'
 @NgModule({
   declarations: [
     AppComponent,
+    AdvocatesComponent,
     EventComponent,
     MediaItemComponent,
     FavoriteDirective,
