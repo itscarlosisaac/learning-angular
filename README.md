@@ -1,4 +1,4 @@
-#Learning Angular,
+# Learning Angular,
 
 This is just a simple of my Angular 2 practices with modules.
 
