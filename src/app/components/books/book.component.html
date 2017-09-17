@@ -1,7 +1,7 @@
 
 <div class="book">
   <h2>{{bookItem.title}}</h2>
-  <!-- <small *ngIf="{{book.alias}}">{{book.alias}}</small> -->
+  <small *ngIf="bookItem.alias">{{bookItem.alias}}</small>
   <p class="author">{{bookItem.author}}</p>
   <button (click)="onToggleDetails()">Show Details</button>
   <div class="details" *ngIf="showDetails">

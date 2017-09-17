@@ -36,3 +36,13 @@ body{
   border-radius: 2px;
   background: #fafafa;
 }
+
+.short-book{
+  background-color:aliceblue;
+  display: block;
+}
+
+.long-book{
+  background-color:yellow;
+  display: block;
+}
