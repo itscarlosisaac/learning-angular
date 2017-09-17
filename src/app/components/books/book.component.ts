@@ -7,5 +7,10 @@ import { Component, Input } from '@angular/core'
 })
 
 export class BookComponent {
+  showDetails = false;
   @Input() bookItem
+
+  onToggleDetails(){
+    this.showDetails = !this.showDetails;
+  }
 }
