@@ -100,8 +100,31 @@ export class AppComponent {
       thumbnailUrl: "url(https://cdn.dribbble.com/users/182545/screenshots/781569/dribbble.png)",
       name: "Ronald Dolz",
       title: "Graphic Designer",
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     }
+  ]
+
+  recipeData = [
+    {
+      name: "Rice",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      steps: [
+        "First",
+        "Second",
+        "Third",
+        "Fourth"
+      ]
+    },
+    {
+      name: "Carrots with Bread",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      steps: [
+        "First",
+        "Second",
+        "Third",
+        "Fourth"
+      ]
+    },
   ]
 
 

@@ -1,0 +1,10 @@
+<div class="recipe">
+  <img src="" alt="">
+  <h3>{{recipeItem.name}}</h3>
+  <p>{{recipeItem.description}}</p>
+  <ul>
+    <li *ngFor="let step of recipeItem.steps">
+      {{step}}
+    </li>
+  </ul>
+</div>

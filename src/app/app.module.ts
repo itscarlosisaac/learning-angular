@@ -11,6 +11,9 @@ import { EventComponent } from './components/event/event.component';
 // Loading advocate component
 import { AdvocatesComponent } from './components/advocates/advocates.component'
 
+// Loading recipe Component
+import { RecipeComponent } from './components/recipe/recipe.component'
+
 // Adding directives
 import { FavoriteDirective } from './directives/favorite.directive'
 
@@ -22,6 +25,7 @@ import { CategotyListPipe } from './pipes/category.list.pipe'
     AppComponent,
     AdvocatesComponent,
     EventComponent,
+    RecipeComponent,
     MediaItemComponent,
     FavoriteDirective,
     CategotyListPipe
