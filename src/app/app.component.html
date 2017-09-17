@@ -1,11 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="app-container">
 
+  <div class="book-list">
+    <book-component *ngFor="let book of booksData"
+      [bookItem]="book" >
+    </book-component>
+  </div>
 
-  <div class="recipe-list">
+  <div class="recipe-list hidden">
     <recipe-component *ngFor="let recipe of recipeData"
       [recipeItem]="recipe" >
-
     </recipe-component>
   </div>
 

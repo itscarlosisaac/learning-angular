@@ -1,0 +1,13 @@
+
+<div class="book">
+  <h2>{{bookItem.title}}</h2>
+  <!-- <small *ngIf="{{book.alias}}">{{book.alias}}</small> -->
+  <p class="author">{{bookItem.author}}</p>
+  <p class="description">{{bookItem.description}}</p>
+  <p class="pages">{{bookItem.pages}}</p>
+  <ul>
+    <li *ngFor='let genre of bookItem.genres'>
+      {{genre}}
+    </li>
+  </ul>
+</div>

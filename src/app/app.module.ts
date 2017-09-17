@@ -14,6 +14,9 @@ import { AdvocatesComponent } from './components/advocates/advocates.component'
 // Loading recipe Component
 import { RecipeComponent } from './components/recipe/recipe.component'
 
+// Loading Books Component
+import { BookComponent } from './components/books/book.component'
+
 // Adding directives
 import { FavoriteDirective } from './directives/favorite.directive'
 
@@ -26,6 +29,7 @@ import { CategotyListPipe } from './pipes/category.list.pipe'
     AdvocatesComponent,
     EventComponent,
     RecipeComponent,
+    BookComponent,
     MediaItemComponent,
     FavoriteDirective,
     CategotyListPipe
