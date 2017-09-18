@@ -1,0 +1,7 @@
+<div class="book-list">
+  <book-component
+    [ngClass]="{'short-book': book.type === 'short', 'long-book': book.type === 'long' }"
+    *ngFor="let book of booksData"
+    [bookItem]="book" >
+  </book-component>
+</div>

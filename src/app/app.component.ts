@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 
-import { BookService } from './services/book.service'
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,18 +7,6 @@ import { BookService } from './services/book.service'
 })
 
 export class AppComponent {
-
-  booksData;
-  constructor( private bookService: BookService ){}
-
-  ngOnInit(){
-    this.booksData = this.bookService.get();
-  }
-
-  onBookDelete(book){
-    this.booksData.delete(book)
-  }
-
 
   firstMediaItem = {
     id: 1,

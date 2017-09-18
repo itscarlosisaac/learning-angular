@@ -17,6 +17,7 @@ import { RecipeComponent } from './components/recipe/recipe.component'
 
 // Loading Books Component
 import { BookComponent } from './components/books/book.component'
+import { BooksListComponent } from './components/books/books.list.component'
 //  Books form
 import { BookFormComponent } from './components/books/book.form.component'
 
@@ -29,10 +30,14 @@ import { CategotyListPipe } from './pipes/category.list.pipe'
 // Loading services
 import { BookService } from './services/book.service'
 
+// Import Routes
+import { routing } from './routes/app.routing';
+
 @NgModule({
   imports: [ // Bring other angular module
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    routing
   ],
   declarations: [
     AppComponent,
@@ -40,6 +45,7 @@ import { BookService } from './services/book.service'
     EventComponent,
     RecipeComponent,
     BookComponent,
+    BooksListComponent,
     BookFormComponent,
     MediaItemComponent,
     FavoriteDirective,
