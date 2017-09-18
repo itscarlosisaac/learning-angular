@@ -1,6 +1,6 @@
 
 <div class="book">
-  <h2>{{bookItem.title}}</h2>
+  <h2>{{bookItem.title | titlecase }}</h2>
   <small *ngIf="bookItem.alias">{{bookItem.alias}}</small>
   <p class="author">{{bookItem.author}}</p>
   <button (click)="onToggleDetails()">Show Details</button>
@@ -12,5 +12,6 @@
         {{genre}}
       </li>
     </ul>
+    <!-- <button (click)="bookItem.onBookDelete()">Delete Book</button> -->
   </div>
 </div>

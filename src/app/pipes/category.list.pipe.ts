@@ -16,6 +16,5 @@ export class CategotyListPipe {
       }
     });
     return cats.join(', ') ;
-    // return mediaItems;
   }
 }

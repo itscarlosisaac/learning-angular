@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms'
 
 // Loading custom components
 import { AppComponent } from './app.component';
@@ -16,6 +17,8 @@ import { RecipeComponent } from './components/recipe/recipe.component'
 
 // Loading Books Component
 import { BookComponent } from './components/books/book.component'
+//  Books form
+import { BookFormComponent } from './components/books/book.form.component'
 
 // Adding directives
 import { FavoriteDirective } from './directives/favorite.directive'
@@ -23,21 +26,28 @@ import { FavoriteDirective } from './directives/favorite.directive'
 // Adding Pipes
 import { CategotyListPipe } from './pipes/category.list.pipe'
 
+// Loading services
+import { BookService } from './services/book.service'
+
 @NgModule({
+  imports: [ // Bring other angular module
+    BrowserModule,
+    ReactiveFormsModule
+  ],
   declarations: [
     AppComponent,
     AdvocatesComponent,
     EventComponent,
     RecipeComponent,
     BookComponent,
+    BookFormComponent,
     MediaItemComponent,
     FavoriteDirective,
     CategotyListPipe
   ],
-  imports: [ // Bring other angular module
-    BrowserModule
+  providers: [
+    BookService
   ],
-  providers: [],
   bootstrap: [
     AppComponent,
   ] // Use for the root module and lets angular knows the starting point of the app.
