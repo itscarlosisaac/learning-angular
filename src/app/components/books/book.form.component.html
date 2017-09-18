@@ -1,0 +1,40 @@
+<header>
+  <h2>Add new Book</h2>
+</header>
+<form
+  [formGroup]="form"
+  (ngSubmit)="onSubmit(form.value)">
+  <ul>
+    <li>
+      <label for="title">Title</label>
+      <input type="text" name="title" id="title" formControlName="title">
+      <div *ngIf="form.controls.title.errors?.pattern">Please remove invalid characters.</div>
+    </li>
+    <li>
+      <label for="author">Author</label>
+      <input type="text" name="author" id="author" formControlName="author">
+    </li>
+    <li>
+      <label for="description">Description</label>
+      <textarea type="text" name="description" id="description"  formControlName="description"></textarea>
+    </li>
+    <li>
+      <label for="pages">Pages</label>
+      <input type="number" name="pages" id="pages"  formControlName="pages">
+    </li>
+    <li>
+      <label for="genres">Genres</label>
+      <input type="text" name="genres" id="genres"  formControlName="genres">
+    </li>
+    <li>
+      <label for="type">Type</label>
+      <select type="type" name="type" id="type"  formControlName="type">
+        <option value="short">Short</option>
+        <option value="long">Long</option>
+      </select>
+    </li>
+    <li>
+      <button type="submit" [disabled]="!form.valid">Add Book</button>
+    </li>
+  </ul>
+</form>
